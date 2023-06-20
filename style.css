@@ -153,8 +153,7 @@ footer p {
     }
     form input,
     form select {
-      width:100%;
-      max-width:150px;
+      max-width:60px;
     }
     form label {
       display: block;
@@ -177,4 +176,21 @@ footer p {
       flex: 2;
     }
 
+    section#about div {display: flex;align-items: center;} 
+    section#about div img {width: 22%;}
+    section#about div p {width: 40%;}
+}
+
+@media all and (min-width: 720px) {
+    form input,
+    form select {
+      max-width:125px;
+    }
+}
+
+@media all and (min-width: 960px) {
+    form input,
+    form select {
+      max-width:150px;
+    }
 }
